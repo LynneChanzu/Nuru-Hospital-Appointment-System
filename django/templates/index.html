@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cta %}
+<div class="container hero" style="height: 400px;">
+        <div class="row">
+            <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
+                <h1>We cater to your health needs.</h1>
+            </div>
+        </div>
+    </div>
+
+{% endblock cta %}
+
+{% block content %}
+<section class="container py-5"  style="margin-top:10px;height: 500px;" id="Insurance">
+    <div class="row text-center ">
+        <div class="col-lg-8 mx-auto">
+            <h1 class="display-4">Medical Insurance</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row text-center">
+
+            <!-- Insurance-->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'img/jub.jpg' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                </div>
+            </div><!-- End -->
+
+            <!-- Insurance-->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'img/cic.png' %}" alt="" class=" mh-100 rounded-circle mb-3 img-thumbnail shadow-sm">
+                </div>
+            </div><!-- End -->
+
+            <!-- Insurance-->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'img/AAR.png' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                </div>
+            </div><!-- End -->
+
+            <!-- Insurance-->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'img/madison.jpg' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                </div>
+            </div><!-- End -->
+        </div>
+    </div>
+</section><!-- End -->
+
+<section id="services">
+  <div class="bg-primary text-center py-5 mb-4">
+      <div class="container">
+        <h1 class="fw-light text-white">Services</h1>
+        <p class="overview">Your health is our concern.</p>
+      </div>
+    </div>
+  <div class="container">
+    <div class="row">
+      <!-- Team Member 1 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'img/consult.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">General Consultation</h5>
+            <p>Sun-Mon</p>
+            <p>12:00am-12:00p.m</p>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 2 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'img/Dentist.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Dental Care</h5>
+            <p>Mon-Fri</p>
+            <p>8:00am-4:00p.m</p>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 3 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'img/Ortho.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Orthopaedics</h5>
+            <p>Mon-Fri</p>
+            <p>8:00am-12:00p.m</p>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 4 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'img/Well.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Psychiatry</h5>
+            <p>Mon-Sat</p>
+            <p>10:00am-4:00p.m</p>
+          </div>
+        </div>
+      </div>
+      <a href="{% url 'appointment' %}" class="btn btn-light btn-lg action-button" type="button" style="background-color:rgba(13, 216, 74, 0.363) ; text-align: center; margin: auto;">Book an appointment</a>
+
+    </div>
+    <!-- /.row -->
+  
+  </div>
+</section>
+
+<section id="contact" class="card m-4 p-4">
+    <div class="container">
+        <div class="row text-center">
+          
+            <div class="col-sm-6">
+            <div class="contact-detail-box">
+              <i class="far fa-envelope text-colored fa-3x"></i>
+              <h4>Get In Touch</h4>
+              <abbr title="Phone">P:</abbr> +254700435666<br>
+              E: <a href="mailto:email@email.com" class="text-muted">email@email.com</a>
+            </div>
+          </div><!-- end col -->
+  
+          </div>
+        <!-- end row -->
+  
+  
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="contact-map">
+              <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=afya%20center+(Nairobi%20afya%20center)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps tracker sport</a></iframe>            </div>
+          </div><!-- end col -->
+  
+          <!-- Contact form -->
+          <div class="col-sm-6">
+            <form role="form" name="ajax-form" id="ajax-form" method="post" class="form-main" action="{% url 'home' %}">
+            {% csrf_token %}
+              <div class="form-group">
+                <label for="name2">Name</label>
+                <input class="form-control" id="name2" name="name" type="text" placeholder="name">
+                <div class="error" id="err-name" style="display: none;">Please enter name</div>
+              </div> <!-- /Form-name -->
+  
+              <div class="form-group">
+                <label for="email2">Email</label>
+                <input class="form-control" id="email2" name="email" type="text" placeholder="email">
+                <div class="error" id="err-emailvld" style="display: none;">E-mail is not a valid format</div> 
+              </div> <!-- /Form-email -->
+  
+              <div class="form-group">
+                <label for="message2">Message</label>
+                <textarea class="form-control" id="message2" name="message" rows="5" placeholder="message">Message</textarea>
+  
+                <div class="error" id="err-message" style="display: none;">Please enter message</div>
+              </div> <!-- /col -->
+  
+              <div class="row">            
+                  <button type="submit" class="btn btn-primary btn-shadow btn-rounded w-md" id="send">Send</button>
+                </div> <!-- /col -->
+              </div> <!-- /row -->
+  
+            </form> <!-- /form -->
+          </div> <!-- end col -->
+  
+        </div> <!-- end row -->
+            
+      </div>
+</section>
+
+
+{% endblock content %}
